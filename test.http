@@ -1,0 +1,112 @@
+GET http://localhost:8080/hello
+
+### login e authenticação
+
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "login": "ana.souza@voll.med",
+    "senha": 123456
+}
+
+### API de Médicos
+
+POST http://localhost:8080/medicos
+content-Type: application/json
+Accept-Language: pt-br
+
+{
+    "nome": "Laine Sorocaba",
+    "email": "laine.sorocaba@voll.med",
+    "crm": "993418",
+    "telefone": "2197735678",
+    "especialidade": "DERMATOLOGIA",
+    "endereco": {
+        "logradouro": "rua 1",
+        "bairro": "bairro",
+        "cep": "12345678",
+        "cidade": "Brasilia",
+        "uf": "DF",
+        "numero": "1",
+        "complemento": "complemento"
+    }
+}
+
+###
+
+PUT http://localhost:8080/medicos
+content-Type: application/json
+
+{
+    "id": 1,
+    "nome": "João Ferreira da Silva"
+}
+
+###
+
+GET http://localhost:8080/medicos
+Authorization: Beader eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmEuc291emFAdm9sbC5tZWQiLCJpc3MiOiJBUEkgVm9sbC5tZWQiLCJpZCI6MSwiZXhwIjoxNjg2NjkzNzg2fQ.ILMMjNkb_dPksqpMDpLNbzHUtkm-new5eKJxKgYecWQ
+
+###
+
+GET http://localhost:8080/medicos?size=1&page=2
+
+###
+
+GET http://localhost:8080/medicos?sort=id,desc
+
+###
+
+GET http://localhost:8080/medicos/22
+
+###
+
+DELETE http://localhost:8080/medicos/4
+
+### API de Pacientes
+
+POST http://localhost:8080/pacientes
+content-Type: application/json
+
+{
+    "nome": "Judite Ilka",
+    "email": "judite.ilka@voll.med",
+    "telefone": "21922444768",
+    "cpf": "42342623444",
+    "endereco": {
+        "logradouro": "rua 1",
+        "bairro": "bairro",
+        "cep": "12345678",
+        "cidade": "Brasilia",
+        "uf": "DF",
+        "numero": "1",
+        "complemento": "complemento"
+    }
+}
+
+###
+
+PUT http://localhost:8080/pacientes
+content-Type: application/json
+
+{
+    "id": 1,
+    "nome": "Ana Ferreira da Silva"
+}
+
+###
+
+GET http://localhost:8080/pacientes
+
+###
+
+GET http://localhost:8080/pacientes?size=1&page=0
+
+###
+
+GET http://localhost:8080/pacientes?sort=nome,desc
+
+###
+
+DELETE http://localhost:8080/pacientes/2

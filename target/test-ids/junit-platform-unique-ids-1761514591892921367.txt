@@ -1,0 +1,6 @@
+[engine:junit-jupiter]/[class:med.voll.api.controller.ConsultaControllerTest]/[method:agendarCenario01()]
+[engine:junit-jupiter]/[class:med.voll.api.controller.ConsultaControllerTest]/[method:agendarCenario02()]
+[engine:junit-jupiter]/[class:med.voll.api.domain.medico.MedicoRepositoryTest]/[method:escolherMedicoAleatorioLivreNaDataCenario1()]
+[engine:junit-jupiter]/[class:med.voll.api.domain.medico.MedicoRepositoryTest]/[method:escolherMedicoAleatorioLivreNaDataCenario2()]
+[engine:junit-jupiter]/[class:med.voll.api.domain.paciente.PacienteRepositoryTest]/[method:findAllByAtivoTrue()]
+[engine:junit-jupiter]/[class:med.voll.api.domain.paciente.PacienteRepositoryTest]/[method:findAtivoById()]
